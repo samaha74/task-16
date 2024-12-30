@@ -97,6 +97,8 @@ button.btn-primary:hover {
 .row {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .landing .row .col-12 {
@@ -358,7 +360,7 @@ swiper-slide > p{
   p{text-align: center;} 
 }
 
-.cta button{
+.transparent-btn{
   padding: 12px 37px;
   font-weight: 700;
   font-family: sans-serif;
@@ -368,18 +370,29 @@ swiper-slide > p{
   border: 1px solid white;
 }
 
-.cta button:hover{
+.transparent-btn:hover{
   background-color: rgba(255, 255, 255, 0.29);
   border: 1px solid white;
 }
 
 /*! potifolio */
 #portfolio{
-  padding: 50px 0px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-strip);
+}
+
+#portfolio ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  a{
+    text-decoration: none;
+    color: var(--main-color-dark);
+  }
 }
 
 #portfolio .row{
@@ -406,6 +419,10 @@ swiper-slide > p{
 }
 
 /*! Team */
+#team{
+  background-color: var(--main-strip);
+}
+
 .cards{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -460,4 +477,132 @@ swiper-slide > p{
     padding: 10px;
     border-radius: 6px;
   }
+}
+
+
+/*! pricing */
+.pricing{
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing .row{
+  justify-content: center;
+  align-items: center;
+  margin-left: -20px;
+}
+
+.pricing .cards{
+  gap: 0px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 6px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  translate: 25px;
+}
+
+ul{
+  list-style: none;
+  margin-left: -25px;
+  li{
+    margin-bottom: 10px;
+  }
+  .lined{
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+}
+
+.price{
+  display: flex;
+  align-items: flex-end;
+}
+.business{
+  background-color: var(--main-color);
+  color: white;
+}
+.pricing .business button{
+  color: white;
+  width: fit-content;
+  margin: auto;
+  border-color: white;
+}
+.pricing button{
+  color: rgb(142, 142, 142);
+  border-color: rgb(142, 142, 142);
+  width: fit-content;
+  margin: auto;
+}
+
+/*! contact */
+#contact .container{
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe{
+  border: 0;
+  width: 75%;
+  height: 200px;
+}
+
+
+/*! footer */
+footer{
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-strip);
+  color: var(--main-color-dark);
+
+}
+
+.upper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .info{
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.lower
+{
+  background-color: var(--main-color);
+  width: 75%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+
+
+
+
+
+a{
+  text-decoration: none;
+  color: var(--main-color-dark);
 }
