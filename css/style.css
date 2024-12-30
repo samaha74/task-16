@@ -1,5 +1,122 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #2a93df;
+  --main-color-dark: #124265;
+  --paragraph: #929292;
+}
+
+.main-button {
+  padding: 12px 37px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+/*! Nav */
+
+nav {
+  position: sticky !important;
+  top: 0px;
+  left: 0;
+  width: 100%;
+}
+nav .navbar-brand {
+  font-size: 28px;
+  font-weight: 100;
+  color: var(--main-color-dark);
+}
+nav .navbar-nav a {
+  font-size: 15px;
+  font-weight: 500;
+}
+nav .nested-drop-down ul {
+  transition: 0.3s;
+}
+nav .nested-drop-down:has(button:hover) ul {
+  display: block !important;
+}
+nav button.btn-primary {
+  padding: 6px 22px;
+  background-color: var(--main-color-dark);
+}
+nav button.btn-primary:hover {
+  background-color: var(--main-color);
+}
+
+/*! Landing */
+
+.landing {
+  height: 93vh;
+}
+.landing > img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.2;
+}
+.landing .head {
+  width: 53%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 100px;
+  gap: 8px;
+}
+.landing .head h1, 
+.landing .head p {
+  text-align: center;
+}
+.landing .head h1 {
+  font-size: 53px;
+  font-weight: 700;
+  color: var(--main-color-dark);
+}
+
+
+
+
+
+.landing .head p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #8e8e8e;
+}
+.landing .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.landing .row .col-12 {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  transition: 0.6s;
+  background-color: white;
+  padding: 30px 27px;
+  border-radius: 6px;
+}
+.landing .row .col-12:hover {
+  scale: 1.15;
+}
+.landing .row .col-12 i {
+  font-size: 40px;
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+.landing .row .col-12 h4 {
+  font-size: 19px;
+  color: var(--main-color-dark);
+}
+.landing .row .col-12 p {
+  color: var(--paragraph);
+  font-size: 15px;
 }
