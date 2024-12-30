@@ -200,7 +200,7 @@ button.btn-primary:hover {
 .vid-content{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
 padding: 50px 300px;
 }
 
@@ -212,12 +212,11 @@ padding: 50px 300px;
     align-items: center;
     .a{
       position: absolute;
-      translate: -20px;
+      translate: -5px;
     }
     i{
       font-size: 20px;
       color: var(--main-color);
-      translate: -25px;
     }
   }
 }
@@ -339,6 +338,7 @@ swiper-slide > p{
 
 #services .col-12 i{
   transition: 0.3s;
+  font-size: 40px;
 }
 
 #services .col-12:hover{
@@ -424,16 +424,11 @@ swiper-slide > p{
 }
 
 .cards{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
   gap: 20px;
   padding: 50px 100px;
   justify-content: center;
   align-items: center;
-}
-
-.card{
-  translate: 50px;
 }
 
 .icons-in-image{
@@ -450,6 +445,7 @@ swiper-slide > p{
   a{
     color: var(--main-color-dark);
   }
+  height: 19rem;
 }
 
 .cards .a{
@@ -498,7 +494,7 @@ swiper-slide > p{
   gap: 0px;
 }
 
-.card{
+.pricing .card{
   display: flex;
   flex-direction: column;
   gap: 20px;
