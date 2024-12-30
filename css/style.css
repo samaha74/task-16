@@ -523,7 +523,7 @@ ul{
   align-items: flex-end;
 }
 .business{
-  background-color: var(--main-color);
+  background-color: var(--main-color) !important;
   color: white;
 }
 .pricing .business button{
